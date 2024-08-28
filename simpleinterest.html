@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <style>
+        form{
+            border : 10px solid darkgreen;
+            width: 300px;
+            margin: 10px;
+            padding: 50px;
+            border: radius 20px;
+            height: auto;
+            background-color: darkkhaki;
+        }
+        h1{
+            text-align: center;
+        }
+        input[type="button"]{
+            text-align: center;
+            background-color: green;
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+        }
+        input[type="text"]{
+            background-color: pink;
+            
+        }
+        body{
+            background-color: yellowgreen;
+        }
+        p{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1><u>SIMPLE INTEREST CALCULATOR</u></h1><br>
+    <form>
+        <br>
+    <label>Principal amount:</label> &nbsp;
+    <input type = "text" placeholder="Enter the Principal Amount" id="p"><br><br>
+    <label>Time:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type = "text" placeholder="Enter the Time Taken" id="t"><br><br>
+    <label>Rate of Intrest:</label> &nbsp;&nbsp;
+    <input type = "text" placeholder="Enter the Interest Rate" id="r"><br><br><br>
+    <input type = "button" value="Calculate" onclick="cal()"><br><br>
+    <p id="result"></p>
+    </form>
+    </center>
+
+
+    
+</body>
+<script>
+    function cal(){
+
+        P = document.getElementById("p").value;
+        console.log("p")
+        T = document.getElementById("t").value;
+        R = document.getElementById("r").value;
+        console.log(P*T*R)/100;
+        result.innerHTML = "Interest amount is "+(P*T*R)/100;
+
+    }
+</script>
+</html>

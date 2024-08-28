@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <style>
+        form{
+            border:10px solid maroon;
+            width: 300px;
+            margin: 10px;
+            padding: 50px;
+            border: radius 20px;
+            height: auto;
+            background-color: lightgreen;
+
+            font-size: medium;
+        }
+        h1{
+            text-align: center
+        }
+        input[type="button"]{
+            text-align: center;
+            background-color: brown;
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+        }
+        input[type="text"]{
+            background-color: pink;
+            
+        }
+        body{
+            background-color: chocolate;
+        }
+        p{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1><u><b>COMPOUND INTEREST CALCULATOR</b></u></h1><br>
+    <form>
+        <br>
+    <label>Principal amount:</label>
+    <input type = "text" placeholder="Enter the Principal Amount" id="p"><br><br>
+    <label>Time:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type = "text" placeholder="Enter the Time Taken" id="t"><br><br>
+    <label>Rate of Intrest:</label> &nbsp;&nbsp;
+    <input type = "text" placeholder="Enter the Interest Rate" id="r"><br><br>
+    <label>Number of years:</label>
+    <input type="text" placeholder="Enter the number of years" id="n"><br><br><br><br>
+    <input type = "button" value="Calculate" onclick="cal()"><br><br>
+    <p id="result"></p>
+    </form>
+    </center>
+
+
+    
+</body>
+<script>
+    function cal(){
+
+        P = document.getElementById("p").value;
+        console.log("p")
+        T = document.getElementById("t").value;
+        R = document.getElementById("r").value;
+        N = document.getElementById("n").value;
+        console.log((P*(1+(R/N))**(N*T))-P);
+        result.innerHTML = "Interest amount is "+((P*(1+(R/N))**(N*T))-P);
+
+    }
+</script>
+</html>

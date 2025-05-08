@@ -6,7 +6,7 @@
             padding: 15px;
             width: 300px;
             margin: auto;
-            background-color: hotpink;
+            background-color: rgb(139, 241, 139);
             border-radius: 20px;
         }
         input[type="button"]{

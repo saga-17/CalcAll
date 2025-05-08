@@ -4,45 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic calculator</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-        form{
-            border: 10px solid darkred;
-            padding: 15px;
-            width: 300px;
-            margin: auto;
-            background-color: hotpink;
-        }
-        input[type="button"]{
-            text-align: center;
-            background-color: green;
-            padding: 10px;
-            border-radius: 15px;
-            color: white;
-        }
-        p{
-            color: brown;
-            text-align: center;
-        }
-        body{
-            background-color: darkkhaki;
-        }
-        input[type="text"]{
-            background-color: gainsboro;
-        }
-        select{
-            background-color: gainsboro;
-        }
-        p{
-            color: black;
-        }
-    </style>
-    <!--<link href="(./)filename ">-->
+    <link href="CSS/nav.css" rel="stylesheet" type="text/css">
+    <link href="CSS/Bcalc.css" rel="stylesheet" type="text/css">
+    <script src="JS/Bcalc.js"></script>
 </head>
 <body>
-    <h1><u><b>SIMPLE CALCULATOR</b></u></h1><br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Calculator.html">Basic Calculator</a></li>
+        <li><a href="SI.html">Simple Interest</a></li>
+        <li><a href="CI.html">Compound Interest</a></li>
+    </ul>
+    <h1><b>BASIC CALCULATOR</b></h1><br>
     <form>
         <label>Enter A value:</label>&nbsp;
         <input type="text" placeholder="Enter A value" id="a"><br><br>
@@ -62,35 +35,5 @@
 
         <p id="result"></p>
     </form>
-     <!--script space src="give source file i.e., the file in which you've stored the function"-->
-    <script>
-      
-        function cal(){
-            A=document.getElementById("a").value;
-            B=document.getElementById("b").value;
-            OP=document.getElementById("op").value;
-            console.log(OP)
-            switch(OP){
-                case 'ADDITION' : C=(+A + +B);
-                result.innerHTML = "Addition of A+B is "+C;
-                break;
-                case 'SUBTRACTION' : C=(A-B);
-                result.innerHTML = "subtraction of A-B is "+C;
-                break;
-                case 'MULTIPLICATION' : C=(A*B);
-                result.innerHTML = "multiplication of A*B is "+C;
-                break;
-                case 'DIVISION' : C=(A/B);
-                result.innerHTML = "A divided by B is "+C;
-                break;
-                case 'POWER' : C=(A**B);
-                result.innerHTML = "A to the power B is "+C;
-                break;
-                case 'MOD' : C=(A%B);
-                result.innerHTML = "A%B is "+C;
-                break;
-            }
-        }
-    </script>
 </body>
 </html>

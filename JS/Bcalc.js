@@ -20,7 +20,7 @@
                 result.innerHTML = "A to the power B is "+C;
                 break;
                 case 'MOD' : C=(A%B);
-                result.innerHTML = "A moduloB is "+C;
+                result.innerHTML = "A modulo B is "+C;
                 break;
             }
         }
